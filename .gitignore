@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+node_modules/
+coverage/
+dist/
+.obsidian/
+data.json
+X Bookmarks/
+*.zip

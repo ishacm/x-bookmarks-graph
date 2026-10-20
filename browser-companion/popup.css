@@ -1,0 +1,13 @@
+:root { color-scheme: light dark; font-family:system-ui,-apple-system,sans-serif; }
+body { width:320px; margin:0; padding:16px; background:#111318; color:#f2f4f7; }
+h1 { margin:0 0 10px; font-size:18px; }
+label { display:block; margin:12px 0; color:#bac2ce; font-size:12px; }
+input { box-sizing:border-box; width:100%; margin-top:5px; padding:9px; color:inherit; background:#1d2129; border:1px solid #394150; border-radius:7px; }
+.status,.result,.hint { font-size:12px; line-height:1.45; }
+.status { padding:9px; border-radius:7px; background:#1d2129; }
+.hint { color:#98a2b3; }
+.actions { display:flex; gap:8px; }
+button { border:1px solid #394150; border-radius:7px; padding:9px 11px; background:#242a35; color:inherit; cursor:pointer; }
+button.primary { flex:1; background:#1d9bf0; border-color:#1d9bf0; color:white; font-weight:650; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+.result.error { color:#ff8b8b; }.result.success { color:#68d391; }

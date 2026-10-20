@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Bookmarks → Obsidian",
+  "version": "1.0.0",
+  "description": "Collects bookmark cards you view on X and sends them to the local X Bookmarks Graph Obsidian plugin.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "content_scripts": [{
+    "matches": ["https://x.com/*", "https://twitter.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_title": "Send X bookmarks to Obsidian", "default_popup": "popup.html" }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "obsidian-x-bookmarks-graph",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free, local-first X bookmark importer and knowledge graph for Obsidian",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check main.js && node --check browser-companion/content.js && node --check browser-companion/popup.js"
+  },
+  "license": "MIT"
+}

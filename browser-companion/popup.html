@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>X Bookmarks → Obsidian</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>X → Obsidian</h1>
+  <p id="status" class="status">Checking the current tab…</p>
+  <label>Obsidian receiver port<input id="port" type="number" min="1024" max="65535" value="27123"></label>
+  <label>Pairing code<input id="secret" type="password" autocomplete="off" placeholder="Paste from Obsidian settings"></label>
+  <div class="actions"><button id="send" class="primary">Send captured posts</button><button id="clear">Clear session</button></div>
+  <p class="hint">Keep this tab open and scroll through <strong>x.com/i/history</strong> or <strong>x.com/i/bookmarks</strong>. Posts are collected as they appear. Nothing is sent until you click Send.</p>
+  <p id="result" class="result"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
